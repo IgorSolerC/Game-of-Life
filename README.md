@@ -1,27 +1,27 @@
 # Game of Life
 
-<!-- TABELA DE CONTEUDO -->
-<details open="open">
-  <summary>Conteúdos</summary>
-  <ol>
-    <li>
-      <a href="#sobre o projeto">Sobre o Projeto</a>
-      <ul>
-        <li><a href="#criado com">Criado com</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#como utilizar">Como utilizar</a>
-      <ul>
-        <li><a href="#Download">Download</a></li>
-      </ul>
-      <ul>
-        <li><a href="#comandos">Comandos</a></li>
-      </ul>
-    </li>
-  </ol>
-</details>
-Implementação do Game of Life de Comway em Python, utilizando o pacote PyGame
+<br />
+<p align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
+
+  <h3 align="center">Best-README-Template</h3>
+
+  <p align="center">
+    An awesome README template to jumpstart your projects!
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    ·
+    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+  </p>
+</p>
+
 
 # Sobre o Projeto
 
