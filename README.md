@@ -5,13 +5,13 @@
   <summary>Conteúdos</summary>
   <ol>
     <li>
-      <a href="#sobre o projeto">About The Project</a>
+      <a href="#sobre o projeto">Sobre o projeto</a>
       <ul>
-        <li><a href="#criado com">Built With</a></li>
+        <li><a href="#criado com">Criado com</a></li>
       </ul>
     </li>
     <li>
-      <a href="#instalação">Getting Started</a>
+      <a href="#instalacao">Instalação</a>
     </li>
   </ol>
 </details>
