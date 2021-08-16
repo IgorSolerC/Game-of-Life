@@ -7,7 +7,7 @@
     <img src="Imagens/ConwayLogo.png" alt="Logo">
   </a>
   
-  <h3 align="center">Implementação em Python do Game of Life de Comway</h3>
+  <h3 align="center">Game of Life de Comway. Implementação em Python</h3>
 
   <p align="center">
     An awesome README template to jumpstart your projects!
