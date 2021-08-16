@@ -9,6 +9,9 @@
       <ul>
         <li><a href="#criado com">Criado com</a></li>
       </ul>
+      <ul>
+        <li><a href="#como utilizar">Como utilizar</a></li>
+      </ul>
     </li>
     <li>
       <a href="#instalacao">Instalação</a>
