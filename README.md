@@ -2,7 +2,7 @@
 
 <br />
 <p align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://github.com/IgorSolerC/Game-of-Life">
     <img src="Imagens/ConwayLogo.png" alt="Logo">
   </a>
 
