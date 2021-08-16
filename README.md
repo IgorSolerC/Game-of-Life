@@ -18,5 +18,8 @@
 Implementação do Game of Life de Comway em Python, utilizando o pacote PyGame
 
 <img src="Imagens/GifConway1.gif" width="150" height="150" />
-<img src="https://media.giphy.com/media/k1WT2OIuizpLoMiGYG/giphy.gif" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="300" height="300" />
-<img src="https://media.giphy.com/media/eNOR79KKboqUtUUkfq/giphy.gif" data-canonical-src="https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png" width="300" height="300" />
+<img src="Imagens/GifConway2.gif" width="150" height="150" />
+<img src="Imagens/GifConway3.gif" width="150" height="150" />
+<img src="Imagens/GifConway4.gif" width="150" height="150" />
+<img src="Imagens/GifConway5.gif" width="150" height="150" />
+<img src="Imagens/GifConway6.gif" width="150" height="150" />
