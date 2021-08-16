@@ -1,6 +1,6 @@
-# Game-of-Life
+# Game of Life
 
-<!-- TABLE OF CONTENTS -->
+<!-- TABELA DE CONTEUDO -->
 <details open="open">
   <summary>Conteúdos</summary>
   <ol>
