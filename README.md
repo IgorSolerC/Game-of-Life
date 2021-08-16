@@ -5,7 +5,7 @@
   <summary>Conteúdos</summary>
   <ol>
     <li>
-      <a href="#sobre o projeto">Sobre o projeto</a>
+      <a href="#sobre o projeto">Sobre o Projeto</a>
       <ul>
         <li><a href="#criado com">Criado com</a></li>
       </ul>
