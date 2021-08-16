@@ -6,6 +6,28 @@
     <img src="Imagens/ConwayLogo.png" alt="Logo">
   </a>
 
+<!-- TABELA DE CONTEUDO -->
+<details open="open">
+  <summary>Conteúdos</summary>
+  <ol>
+    <li>
+      <a href="#sobre-o-projeto">Sobre o Projeto</a>
+      <ul>
+        <li><a href="#criado-com">Criado com</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#como-utilizar">Como utilizar</a>
+      <ul>
+        <li><a href="#Download">Download</a></li>
+      </ul>
+      <ul>
+        <li><a href="#comandos">Comandos</a></li>
+      </ul>
+    </li>
+  </ol>
+</details>  
+  
   <h3 align="center">Best-README-Template</h3>
 
   <p align="center">
