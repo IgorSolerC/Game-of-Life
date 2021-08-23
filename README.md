@@ -38,7 +38,7 @@
 
 O Jogo da Vida de conway é descrito com frequencia como um jogo de zero jogadores.
 
-Este jogo é uma simulação de células, onde elas podem morrer ou viver com base em simples condições. Este jogo se tornou famoso por conta da complexidade das criações que podem ser feitas com estas simples condições.
+Este jogo é uma simulação de células que podem morrer ou viver com base em simples condições. Este jogo se tornou famoso por conta da complexidade das criações que podem ser feitas com estas simples condições.
 
 Esta implementação foi feita em Python como forma de estudo.
 
