@@ -38,7 +38,9 @@
 
 O Jogo da Vida de conway é descrito com frequencia como um jogo de zero jogadores.
 
-Este jogo é uma simulação de células que podem morrer ou viver com base em simples condições. Este jogo se tornou famoso por conta da complexidade das criações que podem ser feitas com estas simples condições.
+Este jogo é uma simulação de células que podem morrer ou viver com base em simples condições. Esse tipo de simulação é chamado de "autómato celular".
+
+O autómato celular Jogo da Vida de conway se tornou famoso por conta da complexidade das criações que podem ser feitas com simples condições.
 
 Esta implementação foi feita em Python como forma de estudo.
 
@@ -48,9 +50,9 @@ O pacote [PyGame](https://www.pygame.org/) foi utilizado para o desenvolvimento 
 
 ## Regras
 
-Neste Jogo, células vivem e morrem em um tabuleiro com tamanho de 50x50. A cada passo do jogo determinadas células permanem vivas, outras morrem e outras nascem.
+Neste Jogo, células vivem e morrem em um tabuleiro. Nesta implementação o tabuleiro possui um tamanho de 50x50 células.
 
-Uma célula viva neste jogo é representada como um quadrado branco, já uma morta é representada como um quadrado preto.
+A cada passo do jogo determinadas células permanem vivas, outras morrem e outras nascem. Uma célula viva neste jogo é representada como um quadrado branco, já uma morta é representada como um quadrado preto.
 
 As condições de vida ou morte de uma célula são dependentes do estado dos vizinhos desta célula. Os vizinhos de uma célula são as 8 outras células em volta desta, ou seja, as células que estão em contato direto com ela.
 
@@ -64,7 +66,7 @@ Para que uma célula viva ou morra ela deve passar pelas seguintes condições:
   Uma célula viva continua neste estado se é vizinha de 2 ou 3 outras células vivas.
 * Nasce
 
-  Uma célula morta se torna uma célula viva caso seja vizinha de exatamente 3 células vivas
+  Uma célula morta se torna uma célula viva caso seja vizinha de exatamente 3 células vivas.
 
 # Como utilizar
 
@@ -76,7 +78,7 @@ Para que uma célula viva ou morra ela deve passar pelas seguintes condições:
 
 * Adicionar e Remover células
 
-Ao apertar com o botão esquerdo do mouse em cima de uma célula no tabuleiro quando o jogo está pausado, o estado da célula clicada é alterado (de vivo para morto ou de morto para vivo)
+  Ao apertar com o botão esquerdo do mouse em cima de uma célula no tabuleiro quando o jogo está pausado, o estado da célula clicada é alterado (de vivo para morto ou de morto para vivo)
 
 <img src="Imagens/GifConway1.gif" width="200" height="200" />
 <img src="Imagens/GifConway2.gif" width="200" height="200" />
