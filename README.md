@@ -72,17 +72,43 @@ Para que uma célula viva ou morra ela deve passar pelas seguintes condições:
 
 ## Download
 
+O Download do executavel para Windows pode ser obtido neste link: 
 
+https://www.link.com.br/
+
+Para usuarios de outros sistemas operacionais:
+* Instale a linguagem Python
+
+  https://www.python.org/
+
+* Instale o PyGame
+
+  Digite em seu prompt de comando o seguite comando.
+
+  `pip install pygame`
+ 
+* Clone o repositório
+ 
+* Abra o arquivo main.py
 
 ## Comandos
 
 * Adicionar e Remover células
 
   Ao apertar com o botão esquerdo do mouse em cima de uma célula no tabuleiro quando o jogo está pausado, o estado da célula clicada é alterado (de vivo para morto ou de morto para vivo)
+  
+* Parar e Retomar
 
-<img src="Imagens/GifConway1.gif" width="200" height="200" />
-<img src="Imagens/GifConway2.gif" width="200" height="200" />
-<img src="Imagens/GifConway3.gif" width="200" height="200" />
-<img src="Imagens/GifConway4.gif" width="400" height="400" />
-<img src="Imagens/GifConway5.gif" width="200" height="200" />
-<img src="Imagens/GifConway6.gif" width="200" height="200" />
+  Ao apertar a tecla ENTER a simulação para caso estivesse rodando ou é retomada caso estivesse parada.
+  
+* Controle de Velocidade
+
+  Ao apertar as teclas 1, 2, 3 ou 4, a velocidade da simulação é alterada. 1 é a velocidade mais lenta e 4 a mais rápida.
+  
+* Salvar e Carregar
+
+  Ao apertar a tecla C, o estado atual do tabuleiro é salvo e pode ser carregado devolta ao apertar a tecla V.
+  
+* Aleatorizar
+
+  Ao apertar a tecla R as células no tabuleiro atual são substituidas por outras em posições aleatórias.
