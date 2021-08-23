@@ -74,7 +74,7 @@ Para que uma célula viva ou morra ela deve passar pelas seguintes condições:
 
 O Download do executavel para Windows pode ser obtido neste link: 
 
-https://www.link.com.br/
+https://github.com/IgorSolerC/Game-of-Life/releases
 
 Para usuarios de outros sistemas operacionais:
 * Instale a linguagem Python
