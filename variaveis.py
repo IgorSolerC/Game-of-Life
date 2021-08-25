@@ -8,5 +8,5 @@ FRAMES_POR_SEGUNDO = 60
 # Cores
 PRETO = (0, 0, 0)
 BRANCO = (255, 255, 255)
-CINZA = (20, 20, 20)
+CINZA = (50, 50, 50)
 quantidadeGrid = 50 #50
