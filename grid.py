@@ -68,8 +68,8 @@ class Tabuleiro():
         rects = self.definirGrid(var.quantidadeGrid)
         for linha in range(len(self.grid)):
             for coluna in range(len(self.grid[linha])):
-                x = coluna*self.tamanhoGrid + self.gapX
-                y = linha*self.tamanhoGrid + self.gapY
+                x = linha*self.tamanhoGrid + self.gapX
+                y = coluna*self.tamanhoGrid + self.gapY
                 rects[linha][coluna] = pg.Rect((x, y), (self.tamanhoGrid, self.tamanhoGrid))
         return rects
 
