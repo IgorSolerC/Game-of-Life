@@ -17,21 +17,29 @@ pg.display.set_caption("Game of Life") # Titulo da janela
 # Constantes
 pausado = True
 
-# Variaveis
-tabuleiro = grid.Tabuleiro(0, 50)
+# Objetos
+tabuleiro = grid.Tabuleiro(50)
 
-# Velocidade
+# Variaveis
 frame = 0
 velocidadeAtt = 30
 velocidadeAttSelecao = 1
 
-# Mouse Over
 mouseOverRect = 0
 mouseOverRectLinha = 0
 mouseOverRectColuna = 0
 
 # Texto
 fonte = pg.font.SysFont('Bahnschrift ', 20)
+
+hudVelocidade = fonte.render("Velocidade: {0}".format(velocidadeAttSelecao), 1, var.BRANCO)
+hudPausado = fonte.render("Pausado: {0}".format(pausado), 1, var.BRANCO)
+hudControleVel = fonte.render("Alterar Vel: 1 a 4", 1, var.BRANCO) 
+hudControleRandom = fonte.render("Aleatorizar: R", 1, var.BRANCO)
+hudControlePause = fonte.render("Pause: ENTER", 1, var.BRANCO) 
+hudControlaInteracao = fonte.render("Interagir: BEM", 1, var.BRANCO) 
+hudControleSalvar = fonte.render("Salvar tela: C", 1, var.BRANCO) 
+hudControleCarregar = fonte.render("Carregar tela: V", 1, var.BRANCO) 
 
 # ---------- MAIN LOOP ---------- 
 jogoRodando = True
@@ -44,21 +52,14 @@ while jogoRodando:
             jogoRodando = False
 
         if evento.type == pg.MOUSEMOTION:
-            # Ve se o mouse está em cima de algum grid
-            mouseOverRect = 0
-            for coluna in range(len(tabuleiro.rects)):
-                for linha in range(len(tabuleiro.rects)):
-                    grid = tabuleiro.rects[linha][coluna]
-                    gridDentro = tabuleiro.grid[linha][coluna]
-                    if grid.collidepoint(pg.mouse.get_pos()):
-                        break
-                    else:
-                        mouseOverRect = 0
-                if grid.collidepoint(pg.mouse.get_pos()):
-                    mouseOverRect = grid
-                    mouseOverRectLinha = linha
-                    mouseOverRectColuna = coluna
-                    break
+            mousePos = pg.mouse.get_pos()
+            if tabuleiro.rectGeral.collidepoint(mousePos) and pausado: # Se o mouse está no tabueiro e o jogo está pausado
+                # Salva o retangulo no grid que ele esta em cima
+                mouseOverRect = 1 # Mouse está em cima de um retangulo
+                mouseOverRectLinha = tabuleiro.colisaoParticoesX(mousePos)
+                mouseOverRectColuna = tabuleiro.colisaoParticoesY(mousePos)
+            else:
+                mouseOverRect = 0 # Mouse não está em cima de um retangulo
                 
         if evento.type == pg.MOUSEBUTTONDOWN: # Jogador apertou botão do mouse
             mouseBotEsquerdo = pg.mouse.get_pressed()[0] # Update estado BEM
@@ -70,27 +71,36 @@ while jogoRodando:
                         tabuleiro.grid[mouseOverRectLinha][mouseOverRectColuna] = 0
                     else:
                         tabuleiro.grid[mouseOverRectLinha][mouseOverRectColuna] = 1
+                        
         if evento.type == pg.KEYDOWN:
             if pg.key.get_pressed()[pg.K_RETURN]:
                 if pausado:
                     pausado = False
                 else:
                     pausado = True
+                hudPausado = fonte.render("Pausado: {0}".format(pausado), 1, var.BRANCO) # Update informação pausado texto
             if pg.key.get_pressed()[pg.K_r]:
-                tabuleiro.grid = tabuleiro.definirGrid(var.quantidadeGrid)
                 tabuleiro.randomGrid()
             if pg.key.get_pressed()[pg.K_1]:
                 velocidadeAtt = 30
                 velocidadeAttSelecao = 1
+                # Update informação velocidade texto
+                hudVelocidade = fonte.render("Velocidade: {0}".format(velocidadeAttSelecao), 1, var.BRANCO)
             if pg.key.get_pressed()[pg.K_2]:
-                velocidadeAtt = 15
+                velocidadeAtt = 13
                 velocidadeAttSelecao = 2
+                # Update informação velocidade texto
+                hudVelocidade = fonte.render("Velocidade: {0}".format(velocidadeAttSelecao), 1, var.BRANCO)
             if pg.key.get_pressed()[pg.K_3]:
-                velocidadeAtt = 7
+                velocidadeAtt = 4
                 velocidadeAttSelecao = 3
+                # Update informação velocidade texto
+                hudVelocidade = fonte.render("Velocidade: {0}".format(velocidadeAttSelecao), 1, var.BRANCO)
             if pg.key.get_pressed()[pg.K_4]:
-                velocidadeAtt = 2
+                velocidadeAtt = 1
                 velocidadeAttSelecao = 4
+                # Update informação velocidade texto
+                hudVelocidade = fonte.render("Velocidade: {0}".format(velocidadeAttSelecao), 1, var.BRANCO)
             if pg.key.get_pressed()[pg.K_c]:
                 tabuleiro.salvaGrid()
             if pg.key.get_pressed()[pg.K_v]:
@@ -102,15 +112,6 @@ while jogoRodando:
         if frame % velocidadeAtt == 0:
             frame = 0
             tabuleiro.attGrid()
-            
-    hudVelocidade = fonte.render("Velocidade: {0}".format(velocidadeAttSelecao), 1, var.BRANCO) # Update informação velocidade texto
-    hudPausado = fonte.render("Pausado: {0}".format(pausado), 1, var.BRANCO) # Update informação velocidade texto
-    hudControleVel = fonte.render("Alterar Vel: 1 a 4", 1, var.BRANCO) # Update informação velocidade texto
-    hudControleRandom = fonte.render("Aleatorizar: R", 1, var.BRANCO) # Update informação velocidade texto
-    hudControlePause = fonte.render("Pause: ENTER", 1, var.BRANCO) # Update informação velocidade texto
-    hudControlaInteracao = fonte.render("Interagir: BEM", 1, var.BRANCO) # Update informação velocidade texto
-    hudControleSalvar = fonte.render("Salvar tela: C", 1, var.BRANCO) # Update informação velocidade texto
-    hudControleCarregar = fonte.render("Carregar tela: V", 1, var.BRANCO) # Update informação velocidade texto
     
     # --------- DRAWING CODE (Update da tela)
     var.TELA.fill(var.CINZA)
