@@ -93,22 +93,22 @@ Para usuarios de outros sistemas operacionais:
 
 ## Comandos
 
-* Adicionar e Remover células
+* Adicionar e Remover células (BEM)
 
   Ao apertar com o botão esquerdo do mouse em cima de uma célula no tabuleiro quando o jogo está pausado, o estado da célula clicada é alterado (de vivo para morto ou de morto para vivo)
   
-* Parar e Retomar
+* Parar e Retomar (ENTER)
 
   Ao apertar a tecla ENTER a simulação para caso estivesse rodando ou é retomada caso estivesse parada.
   
-* Controle de Velocidade
+* Controle de Velocidade (1, 2, 3 e 4)
 
   Ao apertar as teclas 1, 2, 3 ou 4, a velocidade da simulação é alterada. 1 é a velocidade mais lenta e 4 a mais rápida.
   
-* Salvar e Carregar
+* Salvar e Carregar (C e V)
 
   Ao apertar a tecla C, o estado atual do tabuleiro é salvo e pode ser carregado devolta ao apertar a tecla V.
   
-* Aleatorizar
+* Aleatorizar (R)
 
   Ao apertar a tecla R as células no tabuleiro atual são substituidas por outras em posições aleatórias.
