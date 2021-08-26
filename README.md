@@ -89,7 +89,7 @@ Para usuarios de outros sistemas operacionais:
  
 * Clone o repositório
  
-* Abra o arquivo main.py
+* Abra o arquivo main.pyw
 
 ## Comandos
 
